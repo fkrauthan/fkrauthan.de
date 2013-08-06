@@ -7,7 +7,7 @@ build:
         code: ./wintersmith build -v -o ./build
 deploy:
   steps:
-    - fkrauthan/gh-pages:
+    - gh-pages:
         token: $GIT_TOKEN
         domain: fkrauthan.de
         basedir: build
