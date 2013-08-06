@@ -2,11 +2,6 @@
 title: About me
 template: about-me.html
 ---
-# About me
-
-<div style="float: right;">
-	<img src="http://www.gravatar.com/avatar/78d6eb0a26c3af36597b717f4dda3214?s=300" alt="Florian Krauthan" title="Florian Krauthan" />
-</div>
 
 <table id="cv" style="width: 66%;">
 	<tr>

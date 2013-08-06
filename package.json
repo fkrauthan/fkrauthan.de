@@ -7,7 +7,10 @@
 	"private": true,
 	"dependencies": {
 		"wintersmith": "*",
-		"wintersmith-nunjucks": "*"
+		"wintersmith-nunjucks": "*",
+		"moment": "~2.1.0",
+		"underscore": "~1.4.4",
+		"gravatar": "~1.0.6"
 	},
 	"devDependencies": {
 	}

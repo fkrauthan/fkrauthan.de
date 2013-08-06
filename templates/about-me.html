@@ -5,3 +5,13 @@
 	 » 
 	About me
 {% endblock %}
+
+{% block content %}
+	<h1>About me</h1>
+
+	<div style="float: right;">
+		<img src="{{ gravatar.url('mail@fkrauthan.de', {s: '300'}) }}" alt="Florian Krauthan" title="Florian Krauthan" />
+	</div>
+	
+	{{ page.html|safe }}
+{% endblock %}
