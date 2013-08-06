@@ -1,0 +1,14 @@
+{
+	"name": "fkrauthan-de",
+	"description": "The fkrauthan.de personal website",
+	"version": "0.0.1",
+	"author": "Florian Krauthan",
+	"homepage": "http://fkrauthan.de",
+	"private": true,
+	"dependencies": {
+		"wintersmith": "*",
+		"wintersmith-nunjucks": "*"
+	},
+	"devDependencies": {
+	}
+}

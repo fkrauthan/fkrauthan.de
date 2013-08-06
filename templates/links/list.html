@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+{% block title %}{{ page.title }} - Links{% endblock %}
+
+{% block breadcrumb %}
+	<a href="{{ contents['index.md'].url }}">Home</a>
+	 » 
+	<a href="{{ contents['links.json'].url }}">Links</a>
+	 » 
+	{{ page.title }}
+{% endblock %}
+
+{% block content %}
+	<h1>Links - {{ page.title }}</h1>
+	
+	<table cellpadding="0" cellspacing="0">
+		<thead>
+			<tr>
+				<th>Link</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% set fileName = page.filename.substr(page.filename.indexOf('/')) %}
+			{% set fileName = fileName.substr(0, fileName.lastIndexOf('.')).substr(1) %}
+			
+			{% set links = page.parent[fileName]._.pages %}
+			{% if links|length > 0 %}
+				{% for link in links %}
+					<tr {% if loop.index%2 != 0 %}class="dark"{% endif %}>
+						<td>
+							<a class="weblink" href="{{ link.metadata.url }}">{{ link.title }}</a><br />
+							{{ link.metadata.description }}
+						</td>
+					</tr>
+				{% endfor %}
+			{% else %}
+				<tr class="dark">
+					<td>Sorry! There no links in this category right now :(</td>
+				</tr>
+			{% endif %}
+		</tbody>
+	</table>
+{% endblock %}

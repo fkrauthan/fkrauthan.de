@@ -1,0 +1,32 @@
+<ul>
+	<li {% if contents['index.md'].filename == page.filename %}class="active"{% endif %}>
+		<a href="{{ contents['index.md'].url }}">Home</a>
+	</li>
+	<li {% if contents['about-me.md'].filename == page.filename %}class="active"{% endif %}>
+		<a href="{{ contents['about-me.md'].url }}">About me</a>
+	</li>
+	
+	<li {% if contents['links.json'].filename == page.filename or page.filename.substr(0, 6)=='links/' %}class="active"{% endif %}>
+		<a href="{{ contents['links.json'].url }}">Links</a>
+		<ul>
+			{% set linkCategories = contents.links._.pages %}
+			{% for linkCategory in linkCategories %}
+				<li{% if page.url==linkCategory.url %} class="active"{% endif %}><a href="{{ linkCategory.url }}">{{ linkCategory.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</li>
+	
+	<li {% if contents['projects.json'].filename == page.filename or page.filename.substr(0, 6)=='projects/' %}class="active"{% endif %}>
+		<a href="{{ contents['projects.json'].url }}">Projects</a>
+		<ul>
+			{% set projectCategories = contents.projects._.pages %}
+			{% for projectCategory in projectCategories %}
+				<li{% if page.url==projectCategory.url %} class="active"{% endif %}><a href="{{ projectCategory.url }}">{{ projectCategory.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</li>
+	
+	<li {% if contents['contact.md'].filename == page.filename %}class="active"{% endif %}>
+		<a href="{{ contents['contact.md'].url }}">Contact</a>
+	</li>
+</ul>

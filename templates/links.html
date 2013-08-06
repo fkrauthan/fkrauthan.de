@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block title %}Links{% endblock %}
+
+{% block breadcrumb %}
+	<a href="{{ contents['index.md'].url }}">Home</a>
+	 » 
+	Links
+{% endblock %}
+
+{% block content %}
+	<h1>Links</h1>
+	
+	<ul>
+		{% set linkCategories = contents.links._.pages %}
+		{% for linkCategory in linkCategories %}
+			<li><a href="{{ linkCategory.url }}">{{ linkCategory.title }}</a></li>
+		{% endfor %}
+	</ul>
+{% endblock %}

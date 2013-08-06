@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block title %}{{ page.title }}{% endblock %}
+
+{% block breadcrumb %}
+	<a href="{{ contents['index.md'].url }}">Home</a>
+	 » 
+	Contact
+{% endblock %}
+
+{% block content %}
+	{{ page.html|safe }}
+	
+	<!-- May add contact form //-->
+{% endblock %}
