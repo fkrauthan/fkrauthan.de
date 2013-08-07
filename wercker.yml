@@ -9,5 +9,4 @@ deploy:
   steps:
     - lukevivier/gh-pages@0.2.0:
         token: $GIT_TOKEN
-        domain: fkrauthan.de
         basedir: build
