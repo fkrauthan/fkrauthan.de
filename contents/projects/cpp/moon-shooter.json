@@ -1,0 +1,16 @@
+{
+	"title": "Moon Shooter",
+	"template": "projects/show.html",
+	
+	"developmentStart": "08-03-2008",
+	"releaseDate": "13-03-2008",
+	
+	"description": "Moon Shooter is a clone of the well-known game \"Moorhuhn\", but instead of shooting birds, the idea is to shoot moons, which come in different sizes and fly across the screen. Of course you won't get as much points for the \"easy-to-hit\" big moons as when you hit one of the smaller ones. Last but not least, high scores are saved locally. <br /><br />his is the first game I've released, so please don't expect too much from both graphics and game-handling point of view.",
+	
+	"programming_language": "C++",
+	"techniques": [
+		"SDL",
+		"OpenGL",
+		"OpenAL"
+	]
+}

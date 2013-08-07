@@ -1,0 +1,23 @@
+{
+	"title": "IRC Bot",
+	"template": "projects/show.html",
+	
+	"developmentStart": "13-04-2010",
+	"releaseDate": "10-05-2010",
+	
+	"description": "The IRCBot is split into two parts. The Core and many modules.<br /><br />The core provides only connection functionality to connect to many IRC servers with one bot instance. All additional functions are implemented in modules. These modules can be loaded, unloaded and reloaded at runtime.<br /><br />The core and the modules communicate with a C-API and JSON for all data.",
+	
+	"programming_language": "C/C++",
+	"techniques": [
+		"Sockets",
+		"Boost Thread",
+		"Boost Program options ",
+		"libjson"
+	],
+	"links": [
+		{
+			"title": "GitHub",
+			"url": "https://github.com/fkrauthan/IrcBot"
+		}
+	]
+}
