@@ -2,9 +2,10 @@
 	"locals": {
 		"title": "fkrauthan.de"
 	},
-	
 	"port": 2014,
-	"plugins": ["wintersmith-nunjucks"],
+	"plugins": [
+		"wintersmith-nunjucks"
+	],
 	"require": {
 		"gravatar": "gravatar",
 		"moment": "moment",
