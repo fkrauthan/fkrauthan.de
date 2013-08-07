@@ -1,0 +1,113 @@
+{% extends 'layout.html' %}
+
+{% set fileName = page.parent.filename.substr(page.parent.filename.indexOf('/')).substr(1) %}
+{% set category = page.parent.parent[fileName+'.json'] %}
+
+{% block title %}{{ page.title }} - {{ category.title }} - Projects{% endblock %}
+
+{% block breadcrumb %}
+	<a href="{{ contents['index.md'].url }}">Home</a>
+	 » 
+	<a href="{{ contents['projects.json'].url }}">Projects</a>
+	 »
+	<a href="{{ category.url }}">{{ category.title }}</a>
+	 » 
+	{{ page.title }}
+{% endblock %}
+
+{% block content %}
+	<h1>Projects - {{ category.title }} - {{ page.title }}</h1>
+
+	{% set fileName = page.filename.substr(page.filename.lastIndexOf('/')) %}
+	{% set fileName = fileName.substr(0, fileName.lastIndexOf('.')).substr(1) %}
+	{% if page.parent.assets[fileName+'.png'] %}
+		<span class="projectImage">
+			<img src="{{ page.parent.assets[fileName+'.png'].url }}" alt="Project screenshot" title="Project screenshot" align="right"/>
+		</span>
+	{% endif %}
+
+	<fieldset>
+		<legend>Description</legend>
+		<p>{{ page.metadata.description|safe }}</p>
+	</fieldset>
+	
+	{% if page.metadata.developmentStart or page.metadata.releaseDate %}
+		<fieldset>
+			<legend>Project dates</legend>
+		
+			<dl>
+				{% if page.metadata.developmentStart %}
+					<dt>Development start</dt>
+					<dd>{{ page.metadata.developmentStart }}</dd>			
+				{% endif %}
+				
+				{% if page.metadata.releaseDate %}
+					<dt>First release</dt>
+					<dd>{{ page.metadata.releaseDate }}</dd>			
+				{% endif %}
+			</dl>
+		</fieldset>
+	{% endif %}
+
+	{% if page.metadata.licence or page.metadata.programming_language %}
+		<fieldset>
+			<legend>Project details</legend>
+		
+			<dl>
+				{% if page.metadata.programming_language %}
+					<dt>Programming language</dt>
+					<dd>{{ page.metadata.programming_language }}</dd>			
+				{% endif %}
+				
+				{% if page.metadata.licence %}
+					<dt>Licence</dt>
+					<dd>{{ page.metadata.licence }}</dd>			
+				{% endif %}
+			</dl>
+		</fieldset>
+	{% endif %}
+
+	{% if page.metadata.techniques and page.metadata.techniques|length > 0 %}
+		<fieldset>
+			<legend>Techniques</legend>
+			
+			<ul>
+				{% for technique in page.metadata.techniques %}
+					<li>{{ technique }}</li>
+				{% endfor %}
+			</ul>
+		</fieldset>
+	{% endif %}
+
+	{% if page.metadata.authors and page.metadata.authors|length > 0 %}
+		<fieldset>
+			<legend>Team members</legend>
+			
+			<ul>
+				{% for author in page.metadata.authors %}
+					<li>
+						{{ author.name }}
+						
+						{% if author.positions and author.positions|length > 0 %}
+							({{ author.positions|join(', ') }})
+						{% endif %}
+					</li>
+				{% endfor %}
+			</ul>
+		</fieldset>
+	{% endif %}
+
+	{% if page.metadata.links and page.metadata.links|length > 0 %}
+		<fieldset>
+			<legend>Links</legend>
+			
+			<ul>
+				{% for link in page.metadata.links %}
+					<li>
+						<a href="{{ link.url }}">{{ link.title }}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</fieldset>
+	{% endif %}
+{% endblock %}

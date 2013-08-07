@@ -1,0 +1,38 @@
+{
+	"title": "Winery",
+	"template": "projects/show.html",
+	
+	"developmentStart": "12-05-2011",
+	"releaseDate": "01-06-2012",
+	
+	"description": "Winery was a small Android app, created as a school project. Our challenge was to build an Android app for winery shop owner which he could use to manage his wines. There was a small search function by means of which wines could be found by specified criteria. If a customer wanted to order some wine he could add the items to his cart. After checkout the shop owner could select an existing customer or create a new one. He could then split the contents of the cart into packages, each with its own delivery date. When he closed the app two pdfs were written to SD card. A bill for the customer, and a delivery list showing when the packages must be dispatched.",
+	
+	"programming_language": "Java",
+	"techniques": [
+		"Android SDK",
+		"OrmLite",
+		"iText"
+	],
+	"authors": [
+		{
+			"name": "Florian Krauthan",
+			"positions": [
+				"Database",
+				"Programming"
+			]
+		},
+		{
+			"name": "Sydney Döffert",
+			"positions": [
+				"Programming"
+			]
+		},
+		{
+			"name": "Fabio Hellmann",
+			"positions": [
+				"Projectmanager",
+				"Design"
+			]
+		}
+	]
+}
