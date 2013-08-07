@@ -13,5 +13,6 @@
 		"gravatar": "~1.0.6"
 	},
 	"devDependencies": {
+		"rsyncwrapper": "~0.0.15"
 	}
 }

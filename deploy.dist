@@ -1,0 +1,5 @@
+{
+	"host": "HOSTNAME",
+	"dest": "/DEST/PATH",
+	"compareMode": "checksum"
+}

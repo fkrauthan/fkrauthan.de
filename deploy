@@ -1,0 +1,34 @@
+#!/usr/bin/env node
+
+var config = require(__dirname + '/deploy.json');
+var rsync = require('rsyncwrapper').rsync; 
+var exec = require('child_process').exec;
+
+config.src = __dirname + '/build/';
+config.recursive = true;
+config.syncDest = true;
+if(config.args) {
+	config.args.push('--verbose');
+}
+else {
+	config.args = ['--verbose'];
+}
+
+exec(__dirname + '/wintersmith build -v -o ' + config.src, function (error, stdout, stderr) {
+	console.log(stdout);
+	console.log(stderr);
+	
+	if (error !== null) {
+		console.log('Exec error: ' + error);
+	}
+	else {
+		rsync(config, function(error, stdout, stderr) {
+			console.log(stdout);
+			console.log(stderr);
+			
+			if (error !== null) {
+				console.log('Exec error: ' + error);
+			}
+		});
+	}
+});
