@@ -87,6 +87,10 @@ template: about-me.html
 		<td><a href="https://www.xing.com/profile/Florian_Krauthan">Florian Krauthan</a></td>
 	</tr>
 	<tr>
+		<td class="heading">LinkedIn</td>
+		<td><a href="http://www.linkedin.com/pub/florian-krauthan/30/2ab/28">Florian Krauthan</a></td>
+	</tr>
+	<tr>
 		<td class="heading">Business</td>
 		<td>
 			In 2008 I founded my business for Softwaredevelopment, Webdevelopment, Webdesign and Webhosting. If you are interested please contact me via the contact form.
