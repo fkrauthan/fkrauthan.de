@@ -9,9 +9,9 @@ template: contact.html
 	<dl>
 		<dt>Address</dt>
 		<dd>Florian Krauthan</dd>
-		<dd>Fliederstr. 37</dd>
-		<dd>82110 Germering</dd>
-		<dd>Germany</dd>
+		<dd>201 - 921 Thurlow Street</dd>
+		<dd>V6E 1W3, Vancouver, British Columbia</dd>
+		<dd>Canada</dd>
 	</dl>
 	
 	<dl>

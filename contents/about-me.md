@@ -19,8 +19,8 @@ template: about-me.html
 	<tr>
 		<td class="heading">Residence</td>
 		<td>
-			Germering,<br />
-			Germany
+			Vancouver,<br />
+			Canada
 		</td>
 	</tr>
 	<tr>
@@ -57,7 +57,12 @@ template: about-me.html
 				</li>
 				<li>WEB
 					<ul>
-						<li>Twitter Bootstrap, jQuery, JQuery UI, JQuery Mobile, AngularJS, NodeJS, Cordova (Phonegap), Backbone, RequireJS</li>
+						<li>Twitter Bootstrap, jQuery, JQuery UI, AngularJS, NodeJS, Backbone, RequireJS</li>
+					</ul>
+				</li>
+				<li>Mobile
+					<ul>
+						<li>Android SDK (Java), IOS SDK (Objective-C), JQuery Mobile (Javascript), Cordova / Phonegap (Javascript)</li>
 					</ul>
 				</li>
 				<li>SCM
