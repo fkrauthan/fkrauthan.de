@@ -34,17 +34,12 @@ template: about-me.html
 
 	<tr>
 		<td class="heading">Programming skills</td>
-		<td>C/C++, Java, PHP (HTML / CSS / JS / MySQL), Javascript, C#, Visual Basic</td>
+		<td>Java, PHP (HTML / CSS / JS / MySQL), Javascript, C/C++, C#, Visual Basic</td>
 	</tr>
 	<tr>
 		<td class="heading">Experienced in</td>
 		<td>
 			<ul>
-				<li>C/C++
-					<ul>
-						<li>SDL, OpenGL, Qt, OpenAL, wxWidgets, DevIL, Boost, Poco</li>
-					</ul>
-				</li>
 				<li>Java
 					<ul>
 						<li>Spring (MVC, Social), JSF/JSF2, EJB3, JSP (+tag library), Hibernate, Quartz, Wicket</li>
@@ -65,6 +60,11 @@ template: about-me.html
 						<li>Android SDK (Java), IOS SDK (Objective-C), JQuery Mobile (Javascript), Cordova / Phonegap (Javascript)</li>
 					</ul>
 				</li>
+				<li>C/C++
+					<ul>
+						<li>SDL, OpenGL, Qt, OpenAL, wxWidgets, DevIL, Boost, Poco</li>
+					</ul>
+				</li>
 				<li>SCM
 					<ul>
 						<li>Git, Subversion, Mercurial</li>
@@ -77,7 +77,7 @@ template: about-me.html
 				</li>
 				<li>Technologies
 					<ul>
-						<li>Service-oriented architecture (SOA), Single sign-on (SSO), Concurrency managment, Test-driven development (TDD), Android Development, IOS Development, Hybrid Development, Financial application development</li>
+						<li>Docker, Service-oriented architecture (SOA), Single sign-on (SSO), Concurrency managment, Test-driven development (TDD), Android Development, IOS Development, Hybrid Development, Financial application development</li>
 					</ul>
 				</li>
 			</ul>
