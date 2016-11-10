@@ -29,12 +29,12 @@ template: about-me.html
 	</tr>
 	<tr>
 		<td class="heading">Occupation</td>
-		<td>Software Developer at hyperWALLET</td>
+		<td>Software Development Team Lead at Hyperwallet</td>
 	</tr>
 
 	<tr>
 		<td class="heading">Programming skills</td>
-		<td>Java, PHP (HTML / CSS / JS / MySQL), Javascript, C/C++, C#, Visual Basic</td>
+		<td>Java, PHP (HTML / CSS / JS / MySQL), Javascript (Server and Client), C/C++, C#, Visual Basic</td>
 	</tr>
 	<tr>
 		<td class="heading">Experienced in</td>
@@ -52,12 +52,12 @@ template: about-me.html
 				</li>
 				<li>WEB
 					<ul>
-						<li>Twitter Bootstrap, jQuery, JQuery UI, AngularJS, NodeJS, Backbone, RequireJS</li>
+						<li>ReactJS, Redux, Twitter Bootstrap, jQuery, JQuery UI, AngularJS, NodeJS, Backbone, RequireJS</li>
 					</ul>
 				</li>
 				<li>Mobile
 					<ul>
-						<li>Android SDK (Java), IOS SDK (Objective-C), JQuery Mobile (Javascript), Cordova / Phonegap (Javascript)</li>
+						<li>React Native, Android SDK (Java), IOS SDK (Objective-C), JQuery Mobile (Javascript), Cordova / Phonegap (Javascript)</li>
 					</ul>
 				</li>
 				<li>C/C++
@@ -77,7 +77,7 @@ template: about-me.html
 				</li>
 				<li>Technologies
 					<ul>
-						<li>Docker, Service-oriented architecture (SOA), Single sign-on (SSO), Concurrency managment, Test-driven development (TDD), Android Development, IOS Development, Hybrid Development, Financial application development</li>
+						<li>Ansible, Docker, Service-oriented architecture (SOA), Single sign-on (SSO), Concurrency managment, Test-driven development (TDD), Android Development, IOS Development, Hybrid Development, Financial application development</li>
 					</ul>
 				</li>
 			</ul>
