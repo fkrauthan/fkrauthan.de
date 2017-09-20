@@ -9,8 +9,8 @@ template: contact.html
 	<dl>
 		<dt>Address</dt>
 		<dd>Florian Krauthan</dd>
-		<dd>201 - 921 Thurlow Street</dd>
-		<dd>V6E 1W3, Vancouver, British Columbia</dd>
+		<dd>411 - 6893 Prenter Street</dd>
+		<dd>V5E 4L3, Burnaby, British Columbia</dd>
 		<dd>Canada</dd>
 	</dl>
 	
