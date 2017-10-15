@@ -5,6 +5,10 @@
 	"author": "Florian Krauthan",
 	"homepage": "http://fkrauthan.de",
 	"private": true,
+	"scripts": {
+		"build": "wintersmith build",
+		"deploy": "node deploy"
+	},
 	"dependencies": {
 		"wintersmith": "*",
 		"wintersmith-nunjucks": "*",

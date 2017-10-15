@@ -1,7 +1,12 @@
 box: node
 build:
   steps:
-    - npm-install
+    - script:
+        name: set yarn cache
+        code: yarn config set cache-folder $WERCKER_CACHE_DIR/yarn
+    - script:
+        name: install dependencies
+        code: yarn
     - script:
         name: wintersmith build
         code: ./wintersmith build -v -o ./build
