@@ -5,6 +5,7 @@ This repository contains the wintersmith project files to build the fkrauthan.de
 
 [![wercker status](https://app.wercker.com/status/926ecc17dfd963950cac17e2a6164c84/s/master "wercker status")](https://app.wercker.com/project/byKey/926ecc17dfd963950cac17e2a6164c84)
 
+
 Installation
 ------------
 
