@@ -7,16 +7,17 @@
 	"private": true,
 	"scripts": {
 		"build": "wintersmith build",
+		"dev": "wintersmith preview",
 		"deploy": "node deploy"
 	},
 	"dependencies": {
-		"wintersmith": "*",
-		"wintersmith-nunjucks": "*",
-		"moment": "~2.1.0",
-		"underscore": "~1.4.4",
-		"gravatar": "~1.0.6"
+		"gravatar": "^1.8.0",
+		"moment": "^2.24.0",
+		"underscore": "^1.10.2",
+		"wintersmith": "^2.5.0",
+		"wintersmith-nunjucks": "*"
 	},
 	"devDependencies": {
-		"rsyncwrapper": "~0.0.15"
+		"rsyncwrapper": "^3.0.1"
 	}
 }

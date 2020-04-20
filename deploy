@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 
-var config = require(__dirname + '/deploy.json');
-var rsync = require('rsyncwrapper').rsync; 
-var exec = require('child_process').exec;
+const config = require(__dirname + '/deploy.json');
+const rsync = require('rsyncwrapper');
+const exec = require('child_process').exec;
 
 config.src = __dirname + '/build/';
 config.recursive = true;
-config.syncDest = true;
+config.deleteAll = true;
 if(config.args) {
 	config.args.push('--verbose');
 }
@@ -22,7 +22,7 @@ exec(__dirname + '/wintersmith build -v -o ' + config.src, function (error, stdo
 		console.log('Exec error: ' + error);
 	}
 	else {
-		rsync(config, function(error, stdout, stderr) {
+		rsync(config, function (error, stdout, stderr) {
 			console.log(stdout);
 			console.log(stderr);
 			

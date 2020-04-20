@@ -2,8 +2,8 @@
 	<li {% if contents['index.md'].filename == page.filename %}class="active"{% endif %}>
 		<a href="{{ contents['index.md'].url }}">Home</a>
 	</li>
-	<li {% if contents['about-me.md'].filename == page.filename %}class="active"{% endif %}>
-		<a href="{{ contents['about-me.md'].url }}">About me</a>
+	<li {% if contents['about-me.json'].filename == page.filename %}class="active"{% endif %}>
+		<a href="{{ contents['about-me.json'].url }}">About me</a>
 	</li>
 	
 	<li {% if contents['links.json'].filename == page.filename or page.filename.substr(0, 6)=='links/' %}class="active"{% endif %}>
@@ -26,7 +26,7 @@
 		</ul>
 	</li>
 	
-	<li {% if contents['contact.md'].filename == page.filename %}class="active"{% endif %}>
-		<a href="{{ contents['contact.md'].url }}">Contact</a>
+	<li {% if contents['contact.json'].filename == page.filename %}class="active"{% endif %}>
+		<a href="{{ contents['contact.json'].url }}">Contact</a>
 	</li>
 </ul>
