@@ -1,18 +1,18 @@
 box: node
 build:
-  steps:
-    - script:
-        name: set yarn cache
-        code: yarn config set cache-folder $WERCKER_CACHE_DIR/yarn
-    - script:
-        name: install dependencies
-        code: yarn
-    - script:
-        name: wintersmith build
-        code: ./wintersmith build -v -o ./build
+    steps:
+        - script:
+              name: set yarn cache
+              code: yarn config set cache-folder $WERCKER_CACHE_DIR/yarn
+        - script:
+              name: install dependencies
+              code: yarn install
+        - script:
+              name: gatsby build
+              code: yarn run build
 deploy:
-  steps:
-    - lukevivier/gh-pages:
-        token: $GIT_TOKEN
-        domain: fkrauthan.de
-        basedir: build
+    steps:
+        - lukevivier/gh-pages:
+              token: $GIT_TOKEN
+              domain: fkrauthan.de
+              basedir: public
