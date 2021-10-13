@@ -1,7 +1,9 @@
 name: Deploy to Gitlab
 on:
-  branches:
-    - $default-branch
+  workflow_dispatch:
+  push:
+    branches:
+      - $default-branch
 
 jobs:
   build:
@@ -12,9 +14,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
      
-     - uses: actions/setup-node@v2
-       with:
-        node-version: '14'
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
       
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
@@ -28,17 +30,17 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
      
-     - name: Install dependencies
-       run: yarn install
+      - name: Install dependencies
+        run: yarn install
      
-     - name: Build website
-       run: ./wintersmith build -v -o ./build
+      - name: Build website
+        run: ./wintersmith build -v -o ./build
      
-     - name: Archive production artifacts
-       uses: actions/upload-artifact@v2
-       with:
-        name: website-build
-        path: ./build
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: website-build
+          path: ./build
   
   deploy:
     name: Deploy
