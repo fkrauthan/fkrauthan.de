@@ -3,13 +3,13 @@ fkrauthan.de
 
 This repository contains the wintersmith project files to build the fkrauthan.de website.
 
-[![wercker status](https://app.wercker.com/status/926ecc17dfd963950cac17e2a6164c84/m/master "wercker status")](https://app.wercker.com/project/byKey/926ecc17dfd963950cac17e2a6164c84)
+[![Deploy to Gitlab](https://github.com/fkrauthan/fkrauthan.de/actions/workflows/github-actions-deploy.yml/badge.svg)](https://github.com/fkrauthan/fkrauthan.de/actions/workflows/github-actions-deploy.yml)
 
 
 Installation
 ------------
 
-To be able to build the website you have to install `nodejs` and `npm`. After that please run the `npm install` from the project root directory.
+To be able to build the website you have to install `nodejs` and `yarn`. After that please run the `yarn install` from the project root directory.
 
 
 Developing
