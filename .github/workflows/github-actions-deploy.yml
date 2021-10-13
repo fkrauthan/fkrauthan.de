@@ -2,7 +2,8 @@ name: Deploy to Gitlab
 on:
   push:
     branches:
-      - $default-branch
+      - master
+      - main
   workflow_dispatch:
 
 jobs:
