@@ -1,9 +1,9 @@
 name: Deploy to Gitlab
 on:
-  workflow_dispatch:
   push:
     branches:
       - $default-branch
+  workflow_dispatch:
 
 jobs:
   build:
@@ -44,6 +44,7 @@ jobs:
   
   deploy:
     name: Deploy
+    needs: build
     runs-on: ubuntu-latest
     
     steps:
