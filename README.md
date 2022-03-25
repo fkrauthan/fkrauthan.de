@@ -1,6 +1,10 @@
 fkrauthan.de
 ============
 
+
+> **!Outdated!** The new website can be found [here](https://github.com/fkrauthan/fkrauthan.ca)!
+
+
 This repository contains the wintersmith project files to build the fkrauthan.de website.
 
 [![Deploy to Gitlab](https://github.com/fkrauthan/fkrauthan.de/actions/workflows/github-actions-deploy.yml/badge.svg)](https://github.com/fkrauthan/fkrauthan.de/actions/workflows/github-actions-deploy.yml)
